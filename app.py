@@ -63,11 +63,11 @@ def date_range(start,end='2017-08-23'):
     result = session.query(*sel).filter(filter).first()
     
     return { 
-        '1_Min_Temp':result[0], 
-        '2_Avg_Temp': result[1], 
-        '3_Max_Temp':result[2], 
-        '4_Start_date':start, 
-        '5_End_date':end 
+        'Minimum Temperature': result[0], 
+        'Average Temperature': result[1], 
+        'Maximum Temperature': result[2], 
+        'Start Date': start, 
+        'End Date': end 
     }
 
 session.close()  # Close the session after use
